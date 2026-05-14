@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shriprabhu - Generative AI Engineer | AI Developer | Prompt Engineer Portfolio" />
+  <title>Shriprabhu | Generative AI Engineer</title>
+
+  <!-- Google Fonts: Orbitron (display), Poppins (headings), Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== CUSTOM CURSOR ===================== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===================== PARTICLES CANVAS ===================== -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Shriprabhu</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul>
+      <li><a href="#home" class="drawer-link">Home</a></li>
+      <li><a href="#about" class="drawer-link">About</a></li>
+      <li><a href="#skills" class="drawer-link">Skills</a></li>
+      <li><a href="#projects" class="drawer-link">Projects</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <!-- Animated background blobs -->
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="blob blob-4"></div>
+    </div>
+
+    <!-- Grid overlay -->
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <!-- Greeting badge -->
+      <div class="hero-badge" data-aos>
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="hero-heading" data-aos data-aos-delay="100">
+        Hi, I'm <span class="gradient-text">Shriprabhu</span>
+      </h1>
+
+      <!-- Typing Animation -->
+      <div class="hero-typing" data-aos data-aos-delay="200">
+        <span class="typing-prefix">I am a </span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+
+      <!-- Intro Paragraph -->
+      <p class="hero-intro" data-aos data-aos-delay="300">
+        I enjoy creating intelligent applications using Generative AI, Python, and modern AI technologies.
+        Currently exploring LLMs, AI Agents, and automation systems by building real-world projects and improving my development skills.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-buttons" data-aos data-aos-delay="400">
+        <a href="shriprabhu.cv.pdf" class="btn btn-primary" download>
+          <i class="fas fa-download"></i>
+          Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i>
+          Contact Me
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" data-aos data-aos-delay="600">
+        <div class="scroll-line"></div>
+        <span>Scroll Down</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <!-- Section Label -->
+      <div class="section-label" data-aos>
+        <span class="label-line"></span>
+        <span>About Me</span>
+        <span class="label-line"></span>
+      </div>
+
+      <div class="about-grid">
+        <!-- Profile Image -->
+        <div class="about-image-wrap" data-aos data-aos-delay="100">
+          <div class="image-frame">
+            <img
+              src="shriprabhu.png"
+              alt="Shriprabhu - AI Engineer"
+              class="profile-img"
+            />
+            <!-- Floating badges -->
+            <div class="img-badge badge-top">
+              <i class="fas fa-brain"></i> 
+            </div>
+            <div class="img-badge badge-bottom">
+              <i class="fas fa-code"></i> 
+            </div>
+          </div>
+          <!-- Deco elements -->
+          <div class="img-deco-ring"></div>
+          <div class="img-deco-dots"></div>
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content" data-aos data-aos-delay="200">
+          <h2 class="section-heading">
+            Passionate About <span class="gradient-text">AI & Innovation</span>
+          </h2>
+
+          <p class="about-text">
+            I'm <strong>Shriprabhu Nilur</strong>, Computer Engineering Diploma student with hands on experience 
+            in Python ,Generative AI ,Web development, API Intrgration, Prompt Engineer and building automated ai agents
+            using the RAG Architechture.
+          </p>
+          <p class="about-text">
+            
+            </strong>I build the modern AI applications with recent Technologies Agentic ai <strong> Mulit-PDF RAG System</strong>
+            and <strong> Voice  Ai Agent</strong> and <strong> Wether Agent</strong> and the  Generative ai applications are <strong>Resume ATS System</strong> 
+            and  <strong>YouTube Volg Summarizer</strong> Gen Ai <strong>Nutritinist Suggestions Doctor </strong>
+            
+          </p>
+          <p class="about-text">
+            Beyond AI, I build full-stack <strong> PHP Web Applications </strong>  using MYSQL db with real
+            would usecases applications.I recently build the <strong> Milk Shop Management System </strong>
+    
+          
+          </p>
+
+          <!-- Info Grid -->
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Name</span>
+              <span class="info-val">Shriprabhu Nilur</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Role</span>
+              <span class="info-val">Junior Entry-Level</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Focus</span>
+              <span class="info-val">Generative AI</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status</span>
+              <span class="info-val status-open"><span class="dot-pulse"></span>Open to Work</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" style="margin-top:2rem;display:inline-flex;">
+            <i class="fas fa-handshake"></i> Let's Collaborate
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label" data-aos>
+        <span class="label-line"></span>
+        <span>My Toolkit</span>
+        <span class="label-line"></span>
+      </div>
+
+      <h2 class="section-heading centered" data-aos data-aos-delay="100">
+        Skills & <span class="gradient-text">Technologies</span>
+      </h2>
+      <p class="section-subtext centered" data-aos data-aos-delay="150">
+        A collection of tools, frameworks, and technologies I work with in development and AI.
+      </p>
+
+      <!-- Skill Categories -->
+      <div class="skills-categories">
+
+        <!-- AI & ML -->
+        <div class="skill-group" data-aos data-aos-delay="200">
+          <div class="skill-group-header">
+            <i class="fas fa-robot"></i>
+            <span>AI</span>
+          </div>
+          <div class="skills-pills">
+            
+            <span class="skill-pill" data-glow="blue">Python</span>
+            <!-- <span class="skill-pill" data-glow="blue">java</span>
+            <span class="skill-pill" data-glow="blue">PHP</span> -->
+            <span class="skill-pill" data-glow="purple">Generative AI</span>
+            <span class="skill-pill" data-glow="purple">Agentic AI</span>
+            <span class="skill-pill" data-glow="cyan">Prompt Engineering</span>
+            <span class="skill-pill" data-glow="blue">LangChain</span>
+            <span class="skill-pill" data-glow="blue">RAG Systems</span>
+            <span class="skill-pill" data-glow="blue">Qudrant DB</span>
+            <span class="skill-pill" data-glow="blue">MYSQL DB</span>
+
+          </div>
+        </div>
+        
+
+        <!-- APIs & Frameworks -->
+        <div class="skill-group" data-aos data-aos-delay="300">
+          <div class="skill-group-header">
+            <i class="fas fa-plug"></i>
+            <span>APIs & Frameworks & Libraris</span>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill" data-glow="purple">Gemini API</span>
+            <span class="skill-pill" data-glow="blue">OpenAI API</span>
+            <span class="skill-pill" data-glow="purple">Streamlit</span>
+            <span class="skill-pill" data-glow="cyan"> Pandas</span>
+            <span class="skill-pill" data-glow="blue">NumPy</span>
+            <span class="skill-pill" data-glow="blue">Scikit-Learn</span>
+            <span class="skill-pill" data-glow="blue">Matplotlib</span>
+            
+        </div>
+          </div>
+            
+
+        <!-- Dev & DevOps -->
+        <div class="skill-group" data-aos data-aos-delay="400">
+          <div class="skill-group-header">
+            <i class="fas fa-code"></i>
+            <span>Tools & Development </span>
+          </div>
+          <div class="skills-pills">
+            <span class="skill-pill" data-glow="blue">HTML</span>
+            <span class="skill-pill" data-glow="cyan">CSS</span>
+            <span class="skill-pill" data-glow="purple">JavaScript</span>
+            <span class="skill-pill" data-glow="cyan">Git</span>
+            <span class="skill-pill" data-glow="purple">GitHub</span>
+            <span class="skill-pill" data-glow="blue">Docker</span>
+            <span class="skill-pill" data-glow="blue">VS Code</span>
+            <span class="skill-pill" data-glow="blue">Jupitor Notebook</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label" data-aos>
+        <span class="label-line"></span>
+        <span>My Work</span>
+        <span class="label-line"></span>
+      </div>
+
+      <h2 class="section-heading centered" data-aos data-aos-delay="100">
+        Featured <span class="gradient-text">Projects</span>
+      </h2>
+      <p class="section-subtext centered" data-aos data-aos-delay="150">
+        Real-world AI applications — built, deployed, and production-ready
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-aos data-aos-delay="200">
+          <div class="card-banner banner-1">
+            <div class="banner-icon">📄</div>
+            <div class="banner-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="card-tag">Gemini API</span>
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Streamlit</span>
+            </div>
+            <h3 class="card-title">ATS Resume Analyzer</h3>
+            <p class="card-desc">
+              AI-powered resume screening tool that analyzes resumes against job descriptions,
+              calculates ATS match score, identifies missing keywords, and provides actionable feedback
+              using Google Gemini Vision API.
+            </p>
+            <div class="card-buttons">
+              <a href="#" class="card-btn github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="card-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-aos data-aos-delay="300">
+          <div class="card-banner banner-2">
+            <div class="banner-icon">🤖</div>
+            <div class="banner-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="card-tag">LangChain</span>
+              <span class="card-tag">OpenAI</span>
+              <span class="card-tag">FastAPI</span>
+            </div>
+            <h3 class="card-title">AI Chatbot</h3>
+            <p class="card-desc">
+              Context-aware conversational AI chatbot built with LangChain and GPT-4. Features
+              memory management, RAG over custom documents, streaming responses, and a polished
+              chat UI with FastAPI backend.
+            </p>
+            <div class="card-buttons">
+              <a href="#" class="card-btn github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="card-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-aos data-aos-delay="400">
+          <div class="card-banner banner-3">
+            <div class="banner-icon">🌐</div>
+            <div class="banner-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="card-tag">Gemini Vision</span>
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Streamlit</span>
+            </div>
+            <h3 class="card-title">Multi Language Invoice Extractor</h3>
+            <p class="card-desc">
+              Intelligent invoice parser that accepts invoice images in any language and extracts
+              structured data — vendor info, line items, totals — using Gemini Vision multimodal AI,
+              with CSV export support.
+            </p>
+            <div class="card-buttons">
+              <a href="#" class="card-btn github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="card-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-aos data-aos-delay="500">
+          <div class="card-banner banner-4">
+            <div class="banner-icon">☁️</div>
+            <div class="banner-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="card-tag">Agentic AI</span>
+              <span class="card-tag">LangChain</span>
+              <span class="card-tag">Weather API</span>
+            </div>
+            <h3 class="card-title">AI Weather Agent</h3>
+            <p class="card-desc">
+              Autonomous AI agent that intelligently fetches, interprets, and reasons about weather data.
+              Uses tool-calling capabilities to answer complex weather queries, plan trips, and generate
+              activity recommendations based on real-time conditions.
+            </p>
+            <div class="card-buttons">
+              <a href="#" class="card-btn github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="card-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-aos data-aos-delay="200">
+          <div class="card-banner banner-1">
+            <div class="banner-icon">📄</div>
+            <div class="banner-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="card-tag">PHP</span>
+              <span class="card-tag">MYSQL</span>
+              <span class="card-tag">JavaScript</span>
+            </div>
+            <h3 class="card-title">Milk Shop Management System</h3>
+            <p class="card-desc">
+              Developed a web-based Milk Shop Management System to manage customer records,
+              generate invoices, and store customer & billing data with QR code-based customer identification it can be 
+              automate the daily MSMS System.
+            </p>
+            <div class="card-buttons">
+              <a href="https://github.com/shriprabhu-nilur/Milk-Shop-Management-System" class="card-btn github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://primecloud.live/mybillbook/" class="card-btn demo-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label" data-aos>
+        <span class="label-line"></span>
+        <span>Get In Touch</span>
+        <span class="label-line"></span>
+      </div>
+
+      <h2 class="section-heading centered" data-aos data-aos-delay="100">
+        Let's <span class="gradient-text">Connect</span>
+      </h2>
+      <p class="section-subtext centered" data-aos data-aos-delay="150">
+        Have a project idea or want to collaborate? I'd love to hear from you.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos data-aos-delay="200">
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Let's Build Together</h3>
+            <p class="contact-info-text">
+              I'm currently open to freelance projects, full-time roles, and AI research collaborations.
+              Whether you have a question or just want to say hello — my inbox is always open.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrap">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="detail-label">Email</span>
+                  <span class="detail-value">nilurshriprabhu@gmail.com</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrap">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Maharashtra, India</span>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-icon-wrap">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <span class="detail-label">Response Time</span>
+                  <span class="detail-value">Within 24 Hours</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="https://github.com/shriprabhu-nilur" class="social-icon" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shriprabhu-nilur" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:nilurshriprabhu@gmail.com" class="social-icon" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <!-- <a href="#" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-Instagram"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap" data-aos data-aos-delay="300">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <div class="input-wrap">
+                <i class="fas fa-user input-icon"></i>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope input-icon"></i>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag input-icon"></i>
+                <input type="text" id="subject" name="subject" placeholder="Project Collaboration / Opportunity" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-comment input-icon textarea-icon"></i>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+            <!-- Success message -->
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Shriprabhu</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+            <span class="gradient-text">Shriprabhu Nilur</span> 
+        </p>
+        <p class="footer-sub">Built with <span class="heart">♥</span> </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
