@@ -218,11 +218,12 @@
   if (!el) return;
 
   const phrases = [
-    'Generative AI Engineer',
     'AI Developer',
-    'Prompt Engineer',
-    'Agentic AI Enthusiast',
-    'LLM Builder'
+    'Genrative AI ',
+    'Agentic AI ',
+    'RAG Systems',
+    'LLM Applications',
+    'PHP Full-Stack Developer',
   ];
 
   let phraseIdx = 0;
